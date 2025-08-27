@@ -1,0 +1,12 @@
+[package]
+name = "todo"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+axum = {version = "0.8.4",features = ["macros","http2","ws"]}
+chrono = {version = "0.4.41",features = ["serde"]}
+dotenvy = "0.15.7"
+serde = {version = "1.0.219",features = ["derive"]}
+sqlx = {version = "0.8.6",features = ["runtime-tokio","postgres","tls-rustls","chrono"]}
+tokio = {version = "1.47.1",features = ["full"]}
